@@ -1,0 +1,25 @@
+{
+  "name": "esa_app",
+  "productName": "esa_app",
+  "version": "1.0.0",
+  "homepage": "./",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "test": "ls -a",
+    "build": "webpack",
+    "prod": "webpack --mode production --config webpack.build.config.js && electron --noDevServer .",
+    "start": "webpack-dev-server --hot --host 0.0.0.0 --config=./webpack.dev.config.js --mode development",
+    "package": "npm run build",
+    "postpackage": "electron-packager ./ --out=./builds"
+  },
+  "dependencies": {
+    "lodash": "^4.17.20",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "webpack": "^5.10.0",
+    "webpack-cli": "^4.2.0"
+  }
+}
