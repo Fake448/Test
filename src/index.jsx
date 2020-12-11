@@ -1,4 +1,3 @@
-// https://blog.alexdevero.com/electron-and-react-app/
 
 // import React from 'react'
 // import { render } from 'react-dom'
