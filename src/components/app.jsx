@@ -1,11 +1,15 @@
 import React from 'react'
+import ReactDOM from "react-dom";
+import moduleName from '../assets/css/app.css'
+import img from "../../src/assets/img/Download.png";
 
-const App = () => (
-  <div>
-    <h1>Hello, electron!</h1>
-
-    <p>Let's start building your awesome desktop app with electron and React!</p>
-  </div>
-)
+const App = () => {
+  return (
+     <div>
+        <h1>hello World!!</h1>
+        <img src={img}></img>
+     </div>
+  );
+};
 
 export default App

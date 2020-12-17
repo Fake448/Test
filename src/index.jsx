@@ -1,21 +1,9 @@
-import "./index.css";
-// import _ from "lodash";
-
 import React from "react";
 import ReactDOM from "react-dom";
-import img from "./assets/img/Download.png";
-
-const App = () => {
-   return (
-      <div>
-         <h1>hello World!!</h1>
-         <img src={img}></img>
-      </div>
-   );
-};
+import App from "./components/app.jsx";
+import "./assets/css/index.css";
 
 ReactDOM.render(<App />, document.getElementById("app"));
-
 
 // 'use strict'
 
