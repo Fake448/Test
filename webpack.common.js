@@ -3,7 +3,7 @@ var HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
    entry: {
-      main: "./src/index.js",
+      main: "./src/index.jsx",
       vendor: "./src/vendor.js"
    },
    devServer: {
@@ -30,7 +30,7 @@ module.exports = {
             use: [
                {
                   loader: "file-loader",
-                  options: { name: "[path][name].[contenthash][ext]" },
+                  options: { name: "[path][name].[contenthash].[ext]" },
                },
             ],
          },
