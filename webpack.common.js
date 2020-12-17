@@ -2,7 +2,10 @@ const path = require("path");
 var HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-   entry: path.resolve(__dirname, "./src/index.js"),
+   entry: {
+      main: "./src/index.jsx",
+      vendor: "./src/vendor.js"
+   },
    devServer: {
       contentBase: path.join(__dirname, "build"),
    },
@@ -27,7 +30,7 @@ module.exports = {
             use: [
                {
                   loader: "file-loader",
-                  options: { name: "[path][name].[contenthash][ext]" },
+                  options: { name: "[path][name].[contenthash].[ext]" },
                },
             ],
          },
