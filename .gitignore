@@ -9,9 +9,7 @@
 /coverage
 
 # production
-/build
-/dist
-/out
+/build_webpack
 
 # misc
 .DS_Store

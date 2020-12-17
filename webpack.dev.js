@@ -1,22 +1,18 @@
 const path = require("path");
-const common = require("./webpack.common")
-const { merge } = require("webpack-merge")
+const common = require("./webpack.common");
+const { merge } = require("webpack-merge");
+
 
 module.exports = merge(common, {
    mode: "development",
-   devServer: {
-    open: true,
-   },
    output: {
+      path: path.resolve(__dirname, "build_webpack"),
       filename: "index.js",
-      path: path.resolve(__dirname, "dist"),
-   }
+   },
+   devServer: {
+      //open broser
+      open: true,
+      //react need for page-go-back
+      historyApiFallback: true,
+   },
 });
-
-// module.exports = {
-//   mode: "development",
-//   output: {
-//      filename: "index.js",
-//      path: path.resolve(__dirname, "dist"),
-//   }
-// };

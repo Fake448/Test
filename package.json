@@ -7,9 +7,9 @@
   "private": true,
   "scripts": {
     "start": "webpack serve  --config webpack.dev.js",
-    "devf": "webpack serve  --config webpack.dev.js  --open firefox",
-    "devo": "webpack serve  --config webpack.dev.js  --open opera",
-    "build": "webpack  --config webpack.prod.js"
+    "build": "webpack  --config webpack.prod.js",
+    "dev_firefox": "webpack serve  --config webpack.dev.js  --open firefox",
+    "dev_opera": "webpack serve  --config webpack.dev.js  --open opera"
   },
   "dependencies": {
     "lodash": "^4.17.20",
@@ -17,12 +17,19 @@
     "react-dom": "^17.0.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^5.0.1",
+    "file-loader": "^6.2.0",
+    "html-loader": "^1.3.2",
     "html-webpack-plugin": "^4.5.0",
     "style-loader": "^2.0.0",
-    "webpack": "^5.10.0",
+    "webpack": "^5.10.3",
     "webpack-cli": "^4.2.0",
     "webpack-dev-server": "^3.11.0",
-    "webpack-merge": "^5.7.0"
+    "webpack-merge": "^5.7.2"
   }
 }
