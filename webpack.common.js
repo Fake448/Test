@@ -14,10 +14,6 @@ module.exports = {
    module: {
       rules: [
          {
-            test: /\.css$/,
-            use: ["style-loader", "css-loader"],
-         },
-         {
             test: /\.html$/,
             use: ["html-loader"],
          },
@@ -31,7 +27,7 @@ module.exports = {
             use: [
                {
                   loader: "file-loader",
-                  options: { name: "[path][name].[emoji][contenthash][ext]"},
+                  options: { name: "[path][name].[contenthash][ext]" },
                },
             ],
          },

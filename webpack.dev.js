@@ -2,7 +2,6 @@ const path = require("path");
 const common = require("./webpack.common");
 const { merge } = require("webpack-merge");
 
-
 module.exports = merge(common, {
    mode: "development",
    output: {
@@ -14,5 +13,13 @@ module.exports = merge(common, {
       open: true,
       //react need for page-go-back
       historyApiFallback: true,
+   },
+   module: {
+      rules: [
+         {
+            test: /\.css$/,
+            use: ["style-loader", "css-loader"],
+         },
+      ],
    },
 });

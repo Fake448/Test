@@ -1,23 +1,20 @@
-import './index.css'
+import "./index.css";
 import _ from "lodash";
 
 import React from "react";
 import ReactDOM from "react-dom";
-import img from './assets/img/Download.png'
+import img from "./assets/img/Download.png";
 
 const App = () => {
-  return(
-    <div>
-      <h1>hello World!!</h1>
-      <img src={img}></img>
-    </div>
-  )
-}
+   return (
+      <div>
+         <h1>hello World!!</h1>
+         <img src={img}></img>
+      </div>
+   );
+};
 
 ReactDOM.render(<App />, document.getElementById("app"));
-
-
-
 
 // function component() {
 //   const element = document.createElement("div");
@@ -28,23 +25,19 @@ ReactDOM.render(<App />, document.getElementById("app"));
 //   return element;
 // }
 
-
 // document.body.appendChild(component());
 
 // class test extends React.Component {
-  // render() {
-    // return (
-    //   <React.Fragment>
-    //     <div>TESSSSSSSSSSSST</div>
-    //   </React.Fragment>
-    // );
-  // }
+// render() {
+// return (
+//   <React.Fragment>
+//     <div>TESSSSSSSSSSSST</div>
+//   </React.Fragment>
+// );
+// }
 // }
 
 // ReactDOM.render(<Test />, document.getElementById("root"));
-
-
-
 
 // 'use strict'
 
@@ -150,5 +143,3 @@ ReactDOM.render(<App />, document.getElementById("app"));
 //     createWindow()
 //   }
 // })
-
-
