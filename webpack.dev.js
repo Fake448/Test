@@ -6,7 +6,7 @@ module.exports = merge(common, {
    mode: "development",
    output: {
       path: path.resolve(__dirname, "build_webpack"),
-      filename: "index.js",
+      filename: "[name].bundle.js",
    },
    devServer: {
       //open broser
