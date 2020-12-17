@@ -11,8 +11,8 @@ module.exports = merge(common, {
       filename: "index.[contenthash].js",
    },
    plugins: [
+      new MiniCssExtractPlugin({filename: "[name].[contenthash].css"}),
       new CleanWebpackPlugin({ verbose: true }),
-      new MiniCssExtractPlugin(),
    ],
    module: {
       rules: [
